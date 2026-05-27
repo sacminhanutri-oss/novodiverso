@@ -166,7 +166,7 @@
             animation: popupFadeIn 0.5s ease-out;
         }
 
-        /* Badge 5x flutuando */
+        /* Badge 8x flutuando */
         @keyframes bounceSlow {
 
             0%,
@@ -2029,7 +2029,7 @@
         <img src="images/bola.jpg" class="w-full h-full object-cover" alt="Bola animada">
     </div>
 
-    <!-- BADGE 5x FLUTUANDO (aparece depois do multiplicador) -->
+    <!-- BADGE 8x FLUTUANDO (aparece depois do multiplicador) -->
     <div id="badge-15x" class="fixed top-20 right-4 z-40 hidden">
         <div
             class="bg-[#22c55e] text-white font-black text-xl rounded-full px-4 py-2 shadow-[0_10px_25px_rgba(0,0,0,0.4)] animate-bounce-slow">
@@ -2170,7 +2170,7 @@
         </div>
     </div>
 
-    <!-- POPUP GANHOU MULTIPLICADOR 5x (COM BOTÃO JOGAR) -->
+    <!-- POPUP GANHOU MULTIPLICADOR 8x (COM BOTÃO JOGAR) -->
     <div id="modal-ganhou5x" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center hidden">
         <div class="relative max-w-xs w-[90%]">
             <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-28 h-28 z-50">
@@ -2182,7 +2182,7 @@
             <div
                 class="bg-gradient-to-b from-emerald-500 via-emerald-600 to-emerald-700 rounded-[1.5rem] p-6 pt-14 flex flex-col items-center text-center relative text-white shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
                 <h2 class="text-xl font-black mb-2 font-roboto tracking-tight uppercase">
-                    Multiplicador de 5x desbloqueado
+                    Multiplicador de 8x desbloqueado
                 </h2>
                 <p class="text-sm mb-4 leading-relaxed px-2">
                     Você acaba de ganhar um <strong>multiplicador de 5 vezes</strong> para o seu próximo chute.
@@ -2215,7 +2215,7 @@
         </div>
     </div>
 
-    <!-- POPUP MULTIPLICADOR 5x (FINAL, MOSTRA SALDO MULTIPLICADO) -->
+    <!-- POPUP MULTIPLICADOR 8x (FINAL, MOSTRA SALDO MULTIPLICADO) -->
     <div id="modal-multi" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center hidden">
         <div class="relative max-w-xs w-[90%]">
             <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-28 h-28 z-50">
@@ -2634,7 +2634,7 @@
             if (isProcessing) return;
             playClick();
 
-            // MODO MULTIPLICADOR 5x (depois do "Jogar com 5x")
+            // MODO MULTIPLICADOR 8x (depois do "Jogar com 5x")
             if (modoMultiplicadorAtivo) {
                 isProcessing = true;
 

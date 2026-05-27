@@ -2171,7 +2171,7 @@
     </div>
 
     <!-- POPUP GANHOU MULTIPLICADOR 8x (COM BOTÃO JOGAR) -->
-    <div id="modal-ganhou5x" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center hidden">
+    <div id="modal-ganhou8x" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center hidden">
         <div class="relative max-w-xs w-[90%]">
             <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-28 h-28 z-50">
                 <img class="w-full h-full object-contain drop-shadow-xl" alt="Multiplicador 8x" src="images/5x.png">
@@ -2330,7 +2330,7 @@
         const modalQuase = document.getElementById('modal-quase');
         const modalGol = document.getElementById('modal-gol');
         const modalSuper = document.getElementById('modal-super');
-        const modalGanhou5x = document.getElementById('modal-ganhou5x');
+        const modalGanhou8x = document.getElementById('modal-ganhou8x');
         const modalMulti = document.getElementById('modal-multi');
 
         const btnQuaseContinuar = document.getElementById('btn-quase-continuar');
@@ -2605,15 +2605,15 @@
             modalSuper.classList.add('hidden');
         }
 
-        function abrirGanhou5x() {
+        function abrirGanhou8x() {
             if (ganhouOriginalEl) {
                 animarValorPopup(ganhouOriginalEl, saldoAntesMultiplicador);
             }
-            modalGanhou5x.classList.remove('hidden');
+            modalGanhou8x.classList.remove('hidden');
         }
 
-        function fecharGanhou5x() {
-            modalGanhou5x.classList.add('hidden');
+        function fecharGanhou8x() {
+            modalGanhou8x.classList.add('hidden');
         }
 
         function abrirModalMultiFinal(orig, final) {
@@ -2747,13 +2747,13 @@
             saldoAntesMultiplicador = saldo;
             saldoFinalMultiplicado = saldoAntesMultiplicador * multiplicador;
 
-            abrirGanhou5x();
+            abrirGanhou8x();
         });
 
         // Ganhou 8x: JOGAR (ativa modo multiplicador, usuário precisa clicar em CHUTAR)
         btnGanhouJogar.addEventListener('click', () => {
             playClick();
-            fecharGanhou5x();
+            fecharGanhou8x();
 
             ativarMultiplicadorVisual();
             modoMultiplicadorAtivo = true;
